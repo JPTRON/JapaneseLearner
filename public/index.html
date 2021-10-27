@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="public/style.css">
+    <title>Japanese Learner</title>
+</head>
+<body>
+    <div class="content">
+        <h1 class="title center">Japanese Learner</h1>
+        <div class="checks center">
+            <label for="hiragana">Hiragana</label>
+            <input type="checkbox" class="check" id="hiragana" checked>
+            <label for="katakana">Katakana</label>
+            <input type="checkbox" class="check" id="katakana" checked>
+            <!--<label for="kanji">Kanji</label>
+            <input type="checkbox" class="check" id="kanji" checked>-->
+        </div>
+        <br><br><br>
+        <div class="square center">
+            <h1 class="character"></p>
+        </div>
+        <br>
+        <br>
+        <div class="answer">
+            <form id="answerForm" autocomplete="off">
+                <input id="input" class="input center" placeholder="Answer">
+                <br><br>
+                <button type="submit" class="btn center">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="public/script.js"></script>
+</body>
+</html>
